@@ -1,0 +1,19 @@
+services:
+  frontend:
+    build:
+      context: front-end
+      args:
+        - BACKEND_URL=http://192.168.4.101:2011
+    ports:
+      - "1001:80"
+      - "2001:443"
+
+  backend:
+    build: back-end
+    ports:
+      - "2011:2011"
+    environment:
+      - YOUTUBEE_FRONT_END_URL=http://192.168.4.101:1001
+      #- YOUTUBEE_FRONT_END_URL=https://youtubee.nex.sh
+      - PORT=2011
+      - YOUTUBEE_DOWNLOAD_PATH=/downloads/

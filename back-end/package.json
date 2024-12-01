@@ -1,0 +1,24 @@
+{
+  "name": "youtubedownloader",
+  "version": "1.0.0",
+  "description": "youtube video downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "publish": "publish.cmd"
+  },
+  "author": "Sam Jessep",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "ffmpeg-static": "^4.4.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "nodemon": "^2.0.6",
+    "socket.io": "^4.4.1",
+    "web-push": "^3.4.5",
+    "ytdl": "^1.4.1",
+    "ytdl-core": "^4.11.5"
+  }
+}
